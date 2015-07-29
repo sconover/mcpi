@@ -30,11 +30,19 @@ class Grass(BlockDefinition):
     self.id = 2
     self.name = 'grass'
 
+  PROPERTY_SNOWY = BooleanProperty('snowy')
+  SNOWY_TRUE  = PROPERTY_SNOWY.value(True)
+  SNOWY_FALSE = PROPERTY_SNOWY.value(False)
+
 
 class Dirt(BlockDefinition):
   def __init__(self):
     self.id = 3
     self.name = 'dirt'
+
+  PROPERTY_SNOWY = BooleanProperty('snowy')
+  SNOWY_TRUE  = PROPERTY_SNOWY.value(True)
+  SNOWY_FALSE = PROPERTY_SNOWY.value(False)
 
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_DIRT        = PROPERTY_VARIANT.value('dirt')
@@ -239,6 +247,14 @@ class Leaves(BlockDefinition):
     self.id = 18
     self.name = 'leaves'
 
+  PROPERTY_CHECK_DECAY = BooleanProperty('check_decay')
+  CHECK_DECAY_TRUE  = PROPERTY_CHECK_DECAY.value(True)
+  CHECK_DECAY_FALSE = PROPERTY_CHECK_DECAY.value(False)
+
+  PROPERTY_DECAYABLE = BooleanProperty('decayable')
+  DECAYABLE_TRUE  = PROPERTY_DECAYABLE.value(True)
+  DECAYABLE_FALSE = PROPERTY_DECAYABLE.value(False)
+
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_OAK    = PROPERTY_VARIANT.value('oak')
   VARIANT_SPRUCE = PROPERTY_VARIANT.value('spruce')
@@ -250,6 +266,10 @@ class Sponge(BlockDefinition):
   def __init__(self):
     self.id = 19
     self.name = 'sponge'
+
+  PROPERTY_WET = BooleanProperty('wet')
+  WET_TRUE  = PROPERTY_WET.value(True)
+  WET_FALSE = PROPERTY_WET.value(False)
 
 
 class Glass(BlockDefinition):
@@ -283,6 +303,10 @@ class Dispenser(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_TRIGGERED = BooleanProperty('triggered')
+  TRIGGERED_TRUE  = PROPERTY_TRIGGERED.value(True)
+  TRIGGERED_FALSE = PROPERTY_TRIGGERED.value(False)
+
 
 class Sandstone(BlockDefinition):
   def __init__(self):
@@ -312,6 +336,10 @@ class Bed(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_OCCUPIED = BooleanProperty('occupied')
+  OCCUPIED_TRUE  = PROPERTY_OCCUPIED.value(True)
+  OCCUPIED_FALSE = PROPERTY_OCCUPIED.value(False)
+
   PROPERTY_PART = EnumProperty('part')
   PART_HEAD = PROPERTY_PART.value('head')
   PART_FOOT = PROPERTY_PART.value('foot')
@@ -321,6 +349,10 @@ class GoldenRail(BlockDefinition):
   def __init__(self):
     self.id = 27
     self.name = 'golden_rail'
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
   PROPERTY_SHAPE = EnumProperty('shape')
   SHAPE_NORTH_SOUTH     = PROPERTY_SHAPE.value('north_south')
@@ -336,6 +368,10 @@ class DetectorRail(BlockDefinition):
     self.id = 28
     self.name = 'detector_rail'
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
   PROPERTY_SHAPE = EnumProperty('shape')
   SHAPE_NORTH_SOUTH     = PROPERTY_SHAPE.value('north_south')
   SHAPE_EAST_WEST       = PROPERTY_SHAPE.value('east_west')
@@ -349,6 +385,10 @@ class StickyPiston(BlockDefinition):
   def __init__(self):
     self.id = 29
     self.name = 'sticky_piston'
+
+  PROPERTY_EXTENDED = BooleanProperty('extended')
+  EXTENDED_TRUE  = PROPERTY_EXTENDED.value(True)
+  EXTENDED_FALSE = PROPERTY_EXTENDED.value(False)
 
   PROPERTY_FACING = EnumProperty('facing')
   FACING_DOWN  = PROPERTY_FACING.value('down')
@@ -387,6 +427,10 @@ class Piston(BlockDefinition):
     self.id = 33
     self.name = 'piston'
 
+  PROPERTY_EXTENDED = BooleanProperty('extended')
+  EXTENDED_TRUE  = PROPERTY_EXTENDED.value(True)
+  EXTENDED_FALSE = PROPERTY_EXTENDED.value(False)
+
   PROPERTY_FACING = EnumProperty('facing')
   FACING_DOWN  = PROPERTY_FACING.value('down')
   FACING_UP    = PROPERTY_FACING.value('up')
@@ -408,6 +452,10 @@ class PistonHead(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_SHORT = BooleanProperty('short')
+  SHORT_TRUE  = PROPERTY_SHORT.value(True)
+  SHORT_FALSE = PROPERTY_SHORT.value(False)
 
   PROPERTY_TYPE = EnumProperty('type')
   TYPE_NORMAL = PROPERTY_TYPE.value('normal')
@@ -511,6 +559,10 @@ class DoubleStoneSlab(BlockDefinition):
     self.id = 43
     self.name = 'double_stone_slab'
 
+  PROPERTY_SEAMLESS = BooleanProperty('seamless')
+  SEAMLESS_TRUE  = PROPERTY_SEAMLESS.value(True)
+  SEAMLESS_FALSE = PROPERTY_SEAMLESS.value(False)
+
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_STONE        = PROPERTY_VARIANT.value('stone')
   VARIANT_SANDSTONE    = PROPERTY_VARIANT.value('sandstone')
@@ -552,6 +604,10 @@ class Tnt(BlockDefinition):
   def __init__(self):
     self.id = 46
     self.name = 'tnt'
+
+  PROPERTY_EXPLODE = BooleanProperty('explode')
+  EXPLODE_TRUE  = PROPERTY_EXPLODE.value(True)
+  EXPLODE_FALSE = PROPERTY_EXPLODE.value(False)
 
 
 class Bookshelf(BlockDefinition):
@@ -608,10 +664,34 @@ class Fire(BlockDefinition):
   AGE_14 = PROPERTY_AGE.value(14)
   AGE_15 = PROPERTY_AGE.value(15)
 
+  PROPERTY_ALT = BooleanProperty('alt')
+  ALT_TRUE  = PROPERTY_ALT.value(True)
+  ALT_FALSE = PROPERTY_ALT.value(False)
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_FLIP = BooleanProperty('flip')
+  FLIP_TRUE  = PROPERTY_FLIP.value(True)
+  FLIP_FALSE = PROPERTY_FLIP.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
   PROPERTY_UPPER = IntegerProperty('upper')
   UPPER_0 = PROPERTY_UPPER.value(0)
   UPPER_1 = PROPERTY_UPPER.value(1)
   UPPER_2 = PROPERTY_UPPER.value(2)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class MobSpawner(BlockDefinition):
@@ -816,6 +896,14 @@ class WoodenDoor(BlockDefinition):
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
 
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class Ladder(BlockDefinition):
   def __init__(self):
@@ -897,11 +985,19 @@ class Lever(BlockDefinition):
   FACING_UP_X   = PROPERTY_FACING.value('up_x')
   FACING_DOWN_Z = PROPERTY_FACING.value('down_z')
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class StonePressurePlate(BlockDefinition):
   def __init__(self):
     self.id = 70
     self.name = 'stone_pressure_plate'
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class IronDoor(BlockDefinition):
@@ -923,11 +1019,23 @@ class IronDoor(BlockDefinition):
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
 
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class WoodenPressurePlate(BlockDefinition):
   def __init__(self):
     self.id = 72
     self.name = 'wooden_pressure_plate'
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class RedstoneOre(BlockDefinition):
@@ -980,6 +1088,10 @@ class StoneButton(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class SnowLayer(BlockDefinition):
@@ -1069,11 +1181,31 @@ class Jukebox(BlockDefinition):
     self.id = 84
     self.name = 'jukebox'
 
+  PROPERTY_HAS_RECORD = BooleanProperty('has_record')
+  HAS_RECORD_TRUE  = PROPERTY_HAS_RECORD.value(True)
+  HAS_RECORD_FALSE = PROPERTY_HAS_RECORD.value(False)
+
 
 class Fence(BlockDefinition):
   def __init__(self):
     self.id = 85
     self.name = 'fence'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class Pumpkin(BlockDefinition):
@@ -1160,6 +1292,10 @@ class UnpoweredRepeater(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_LOCKED = BooleanProperty('locked')
+  LOCKED_TRUE  = PROPERTY_LOCKED.value(True)
+  LOCKED_FALSE = PROPERTY_LOCKED.value(False)
+
 
 class PoweredRepeater(BlockDefinition):
   def __init__(self):
@@ -1177,6 +1313,10 @@ class PoweredRepeater(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_LOCKED = BooleanProperty('locked')
+  LOCKED_TRUE  = PROPERTY_LOCKED.value(True)
+  LOCKED_FALSE = PROPERTY_LOCKED.value(False)
 
 
 class StainedGlass(BlockDefinition):
@@ -1217,6 +1357,10 @@ class Trapdoor(BlockDefinition):
   PROPERTY_HALF = EnumProperty('half')
   HALF_TOP    = PROPERTY_HALF.value('top')
   HALF_BOTTOM = PROPERTY_HALF.value('bottom')
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
 
 
 class MonsterEgg(BlockDefinition):
@@ -1292,11 +1436,43 @@ class IronBars(BlockDefinition):
     self.id = 101
     self.name = 'iron_bars'
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
+
 
 class GlassPane(BlockDefinition):
   def __init__(self):
     self.id = 102
     self.name = 'glass_pane'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class MelonBlock(BlockDefinition):
@@ -1356,6 +1532,26 @@ class Vine(BlockDefinition):
     self.id = 106
     self.name = 'vine'
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_UP = BooleanProperty('up')
+  UP_TRUE  = PROPERTY_UP.value(True)
+  UP_FALSE = PROPERTY_UP.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
+
 
 class FenceGate(BlockDefinition):
   def __init__(self):
@@ -1367,6 +1563,18 @@ class FenceGate(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class BrickStairs(BlockDefinition):
@@ -1420,6 +1628,10 @@ class Mycelium(BlockDefinition):
     self.id = 110
     self.name = 'mycelium'
 
+  PROPERTY_SNOWY = BooleanProperty('snowy')
+  SNOWY_TRUE  = PROPERTY_SNOWY.value(True)
+  SNOWY_FALSE = PROPERTY_SNOWY.value(False)
+
 
 class Waterlily(BlockDefinition):
   def __init__(self):
@@ -1437,6 +1649,22 @@ class NetherBrickFence(BlockDefinition):
   def __init__(self):
     self.id = 113
     self.name = 'nether_brick_fence'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class NetherBrickStairs(BlockDefinition):
@@ -1485,6 +1713,18 @@ class BrewingStand(BlockDefinition):
     self.id = 117
     self.name = 'brewing_stand'
 
+  PROPERTY_HAS_BOTTLE_0 = BooleanProperty('has_bottle_0')
+  HAS_BOTTLE_0_TRUE  = PROPERTY_HAS_BOTTLE_0.value(True)
+  HAS_BOTTLE_0_FALSE = PROPERTY_HAS_BOTTLE_0.value(False)
+
+  PROPERTY_HAS_BOTTLE_1 = BooleanProperty('has_bottle_1')
+  HAS_BOTTLE_1_TRUE  = PROPERTY_HAS_BOTTLE_1.value(True)
+  HAS_BOTTLE_1_FALSE = PROPERTY_HAS_BOTTLE_1.value(False)
+
+  PROPERTY_HAS_BOTTLE_2 = BooleanProperty('has_bottle_2')
+  HAS_BOTTLE_2_TRUE  = PROPERTY_HAS_BOTTLE_2.value(True)
+  HAS_BOTTLE_2_FALSE = PROPERTY_HAS_BOTTLE_2.value(False)
+
 
 class Cauldron(BlockDefinition):
   def __init__(self):
@@ -1508,6 +1748,10 @@ class EndPortalFrame(BlockDefinition):
   def __init__(self):
     self.id = 120
     self.name = 'end_portal_frame'
+
+  PROPERTY_EYE = BooleanProperty('eye')
+  EYE_TRUE  = PROPERTY_EYE.value(True)
+  EYE_FALSE = PROPERTY_EYE.value(False)
 
   PROPERTY_FACING = EnumProperty('facing')
   FACING_NORTH = PROPERTY_FACING.value('north')
@@ -1635,17 +1879,61 @@ class TripwireHook(BlockDefinition):
     self.id = 131
     self.name = 'tripwire_hook'
 
+  PROPERTY_ATTACHED = BooleanProperty('attached')
+  ATTACHED_TRUE  = PROPERTY_ATTACHED.value(True)
+  ATTACHED_FALSE = PROPERTY_ATTACHED.value(False)
+
   PROPERTY_FACING = EnumProperty('facing')
   FACING_NORTH = PROPERTY_FACING.value('north')
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
+  PROPERTY_SUSPENDED = BooleanProperty('suspended')
+  SUSPENDED_TRUE  = PROPERTY_SUSPENDED.value(True)
+  SUSPENDED_FALSE = PROPERTY_SUSPENDED.value(False)
+
 
 class Tripwire(BlockDefinition):
   def __init__(self):
     self.id = 132
     self.name = 'tripwire'
+
+  PROPERTY_ATTACHED = BooleanProperty('attached')
+  ATTACHED_TRUE  = PROPERTY_ATTACHED.value(True)
+  ATTACHED_FALSE = PROPERTY_ATTACHED.value(False)
+
+  PROPERTY_DISARMED = BooleanProperty('disarmed')
+  DISARMED_TRUE  = PROPERTY_DISARMED.value(True)
+  DISARMED_FALSE = PROPERTY_DISARMED.value(False)
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_SUSPENDED = BooleanProperty('suspended')
+  SUSPENDED_TRUE  = PROPERTY_SUSPENDED.value(True)
+  SUSPENDED_FALSE = PROPERTY_SUSPENDED.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class EmeraldBlock(BlockDefinition):
@@ -1728,6 +2016,10 @@ class CommandBlock(BlockDefinition):
     self.id = 137
     self.name = 'command_block'
 
+  PROPERTY_TRIGGERED = BooleanProperty('triggered')
+  TRIGGERED_TRUE  = PROPERTY_TRIGGERED.value(True)
+  TRIGGERED_FALSE = PROPERTY_TRIGGERED.value(False)
+
 
 class Beacon(BlockDefinition):
   def __init__(self):
@@ -1740,9 +2032,29 @@ class CobblestoneWall(BlockDefinition):
     self.id = 139
     self.name = 'cobblestone_wall'
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_UP = BooleanProperty('up')
+  UP_TRUE  = PROPERTY_UP.value(True)
+  UP_FALSE = PROPERTY_UP.value(False)
+
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_COBBLESTONE       = PROPERTY_VARIANT.value('cobblestone')
   VARIANT_MOSSY_COBBLESTONE = PROPERTY_VARIANT.value('mossy_cobblestone')
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class FlowerPot(BlockDefinition):
@@ -1838,6 +2150,10 @@ class WoodenButton(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class Skull(BlockDefinition):
   def __init__(self):
@@ -1851,6 +2167,10 @@ class Skull(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_NODROP = BooleanProperty('nodrop')
+  NODROP_TRUE  = PROPERTY_NODROP.value(True)
+  NODROP_FALSE = PROPERTY_NODROP.value(False)
 
 
 class Anvil(BlockDefinition):
@@ -1945,6 +2265,10 @@ class UnpoweredComparator(BlockDefinition):
   MODE_COMPARE  = PROPERTY_MODE.value('compare')
   MODE_SUBTRACT = PROPERTY_MODE.value('subtract')
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class PoweredComparator(BlockDefinition):
   def __init__(self):
@@ -1960,6 +2284,10 @@ class PoweredComparator(BlockDefinition):
   PROPERTY_MODE = EnumProperty('mode')
   MODE_COMPARE  = PROPERTY_MODE.value('compare')
   MODE_SUBTRACT = PROPERTY_MODE.value('subtract')
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class DaylightDetector(BlockDefinition):
@@ -2002,6 +2330,10 @@ class Hopper(BlockDefinition):
   def __init__(self):
     self.id = 154
     self.name = 'hopper'
+
+  PROPERTY_ENABLED = BooleanProperty('enabled')
+  ENABLED_TRUE  = PROPERTY_ENABLED.value(True)
+  ENABLED_FALSE = PROPERTY_ENABLED.value(False)
 
   PROPERTY_FACING = EnumProperty('facing')
   FACING_DOWN  = PROPERTY_FACING.value('down')
@@ -2052,6 +2384,10 @@ class ActivatorRail(BlockDefinition):
     self.id = 157
     self.name = 'activator_rail'
 
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
   PROPERTY_SHAPE = EnumProperty('shape')
   SHAPE_NORTH_SOUTH     = PROPERTY_SHAPE.value('north_south')
   SHAPE_EAST_WEST       = PROPERTY_SHAPE.value('east_west')
@@ -2073,6 +2409,10 @@ class Dropper(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_TRIGGERED = BooleanProperty('triggered')
+  TRIGGERED_TRUE  = PROPERTY_TRIGGERED.value(True)
+  TRIGGERED_FALSE = PROPERTY_TRIGGERED.value(False)
 
 
 class StainedHardenedClay(BlockDefinition):
@@ -2122,11 +2462,35 @@ class StainedGlassPane(BlockDefinition):
   COLOR_RED        = PROPERTY_COLOR.value('red')
   COLOR_BLACK      = PROPERTY_COLOR.value('black')
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
+
 
 class Leaves2(BlockDefinition):
   def __init__(self):
     self.id = 161
     self.name = 'leaves2'
+
+  PROPERTY_CHECK_DECAY = BooleanProperty('check_decay')
+  CHECK_DECAY_TRUE  = PROPERTY_CHECK_DECAY.value(True)
+  CHECK_DECAY_FALSE = PROPERTY_CHECK_DECAY.value(False)
+
+  PROPERTY_DECAYABLE = BooleanProperty('decayable')
+  DECAYABLE_TRUE  = PROPERTY_DECAYABLE.value(True)
+  DECAYABLE_FALSE = PROPERTY_DECAYABLE.value(False)
 
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_ACACIA   = PROPERTY_VARIANT.value('acacia')
@@ -2221,6 +2585,10 @@ class IronTrapdoor(BlockDefinition):
   PROPERTY_HALF = EnumProperty('half')
   HALF_TOP    = PROPERTY_HALF.value('top')
   HALF_BOTTOM = PROPERTY_HALF.value('bottom')
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
 
 
 class Prismarine(BlockDefinition):
@@ -2410,6 +2778,10 @@ class DoubleStoneSlab2(BlockDefinition):
     self.id = 181
     self.name = 'double_stone_slab2'
 
+  PROPERTY_SEAMLESS = BooleanProperty('seamless')
+  SEAMLESS_TRUE  = PROPERTY_SEAMLESS.value(True)
+  SEAMLESS_FALSE = PROPERTY_SEAMLESS.value(False)
+
   PROPERTY_VARIANT = EnumProperty('variant')
   VARIANT_RED_SANDSTONE = PROPERTY_VARIANT.value('red_sandstone')
 
@@ -2438,6 +2810,18 @@ class SpruceFenceGate(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class BirchFenceGate(BlockDefinition):
   def __init__(self):
@@ -2449,6 +2833,18 @@ class BirchFenceGate(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class JungleFenceGate(BlockDefinition):
@@ -2462,6 +2858,18 @@ class JungleFenceGate(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class DarkOakFenceGate(BlockDefinition):
   def __init__(self):
@@ -2473,6 +2881,18 @@ class DarkOakFenceGate(BlockDefinition):
   FACING_SOUTH = PROPERTY_FACING.value('south')
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
+
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class AcaciaFenceGate(BlockDefinition):
@@ -2486,11 +2906,39 @@ class AcaciaFenceGate(BlockDefinition):
   FACING_WEST  = PROPERTY_FACING.value('west')
   FACING_EAST  = PROPERTY_FACING.value('east')
 
+  PROPERTY_IN_WALL = BooleanProperty('in_wall')
+  IN_WALL_TRUE  = PROPERTY_IN_WALL.value(True)
+  IN_WALL_FALSE = PROPERTY_IN_WALL.value(False)
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class SpruceFence(BlockDefinition):
   def __init__(self):
     self.id = 188
     self.name = 'spruce_fence'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class BirchFence(BlockDefinition):
@@ -2498,11 +2946,43 @@ class BirchFence(BlockDefinition):
     self.id = 189
     self.name = 'birch_fence'
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
+
 
 class JungleFence(BlockDefinition):
   def __init__(self):
     self.id = 190
     self.name = 'jungle_fence'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class DarkOakFence(BlockDefinition):
@@ -2510,11 +2990,43 @@ class DarkOakFence(BlockDefinition):
     self.id = 191
     self.name = 'dark_oak_fence'
 
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
+
 
 class AcaciaFence(BlockDefinition):
   def __init__(self):
     self.id = 192
     self.name = 'acacia_fence'
+
+  PROPERTY_EAST = BooleanProperty('east')
+  EAST_TRUE  = PROPERTY_EAST.value(True)
+  EAST_FALSE = PROPERTY_EAST.value(False)
+
+  PROPERTY_NORTH = BooleanProperty('north')
+  NORTH_TRUE  = PROPERTY_NORTH.value(True)
+  NORTH_FALSE = PROPERTY_NORTH.value(False)
+
+  PROPERTY_SOUTH = BooleanProperty('south')
+  SOUTH_TRUE  = PROPERTY_SOUTH.value(True)
+  SOUTH_FALSE = PROPERTY_SOUTH.value(False)
+
+  PROPERTY_WEST = BooleanProperty('west')
+  WEST_TRUE  = PROPERTY_WEST.value(True)
+  WEST_FALSE = PROPERTY_WEST.value(False)
 
 
 class SpruceDoor(BlockDefinition):
@@ -2536,6 +3048,14 @@ class SpruceDoor(BlockDefinition):
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
 
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class BirchDoor(BlockDefinition):
   def __init__(self):
@@ -2555,6 +3075,14 @@ class BirchDoor(BlockDefinition):
   PROPERTY_HINGE = EnumProperty('hinge')
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 
 
 class JungleDoor(BlockDefinition):
@@ -2576,6 +3104,14 @@ class JungleDoor(BlockDefinition):
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
 
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class AcaciaDoor(BlockDefinition):
   def __init__(self):
@@ -2596,6 +3132,14 @@ class AcaciaDoor(BlockDefinition):
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
 
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
+
 
 class DarkOakDoor(BlockDefinition):
   def __init__(self):
@@ -2615,4 +3159,12 @@ class DarkOakDoor(BlockDefinition):
   PROPERTY_HINGE = EnumProperty('hinge')
   HINGE_LEFT  = PROPERTY_HINGE.value('left')
   HINGE_RIGHT = PROPERTY_HINGE.value('right')
+
+  PROPERTY_OPEN = BooleanProperty('open')
+  OPEN_TRUE  = PROPERTY_OPEN.value(True)
+  OPEN_FALSE = PROPERTY_OPEN.value(False)
+
+  PROPERTY_POWERED = BooleanProperty('powered')
+  POWERED_TRUE  = PROPERTY_POWERED.value(True)
+  POWERED_FALSE = PROPERTY_POWERED.value(False)
 

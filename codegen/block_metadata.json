@@ -26,12 +26,31 @@
   {
     "id": 2,
     "name": "minecraft:grass",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "snowy",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 3,
     "name": "minecraft:dirt",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "snowy",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "variant",
@@ -285,6 +304,24 @@
     "name": "minecraft:leaves",
     "properties": [
       {
+        "type": "boolean",
+        "name": "check_decay",
+        "value": true,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "decayable",
+        "value": true,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "variant",
         "value": "oak",
@@ -300,7 +337,17 @@
   {
     "id": 19,
     "name": "minecraft:sponge",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "wet",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 20,
@@ -332,6 +379,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "triggered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -373,6 +429,15 @@
         ]
       },
       {
+        "type": "boolean",
+        "name": "occupied",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "part",
         "value": "foot",
@@ -387,6 +452,15 @@
     "id": 27,
     "name": "minecraft:golden_rail",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "shape",
@@ -407,6 +481,15 @@
     "name": "minecraft:detector_rail",
     "properties": [
       {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "shape",
         "value": "north_south",
@@ -425,6 +508,15 @@
     "id": 29,
     "name": "minecraft:sticky_piston",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "extended",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "facing",
@@ -471,6 +563,15 @@
     "name": "minecraft:piston",
     "properties": [
       {
+        "type": "boolean",
+        "name": "extended",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "facing",
         "value": "north",
@@ -500,6 +601,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "short",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       },
       {
@@ -631,6 +741,15 @@
     "name": "minecraft:double_stone_slab",
     "properties": [
       {
+        "type": "boolean",
+        "name": "seamless",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "variant",
         "value": "stone",
@@ -685,7 +804,17 @@
   {
     "id": 46,
     "name": "minecraft:tnt",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "explode",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 47,
@@ -748,6 +877,51 @@
         ]
       },
       {
+        "type": "boolean",
+        "name": "alt",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "flip",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "integer",
         "name": "upper",
         "value": 0,
@@ -755,6 +929,15 @@
           0,
           1,
           2
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -1040,6 +1223,24 @@
           "left",
           "right"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -1156,13 +1357,32 @@
           "up_x",
           "down_z"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
   {
     "id": 70,
     "name": "minecraft:stone_pressure_plate",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 71,
@@ -1196,13 +1416,41 @@
           "left",
           "right"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
   {
     "id": 72,
     "name": "minecraft:wooden_pressure_plate",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 73,
@@ -1265,6 +1513,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -1366,12 +1623,59 @@
   {
     "id": 84,
     "name": "minecraft:jukebox",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "has_record",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 85,
     "name": "minecraft:fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 86,
@@ -1482,6 +1786,15 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "locked",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -1509,6 +1822,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "locked",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -1564,6 +1886,15 @@
         "possible_values": [
           "top",
           "bottom"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -1659,12 +1990,86 @@
   {
     "id": 101,
     "name": "minecraft:iron_bars",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 102,
     "name": "minecraft:glass_pane",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 103,
@@ -1740,7 +2145,53 @@
   {
     "id": 106,
     "name": "minecraft:vine",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "up",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 107,
@@ -1755,6 +2206,33 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -1838,7 +2316,17 @@
   {
     "id": 110,
     "name": "minecraft:mycelium",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "snowy",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 111,
@@ -1853,7 +2341,44 @@
   {
     "id": 113,
     "name": "minecraft:nether_brick_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 114,
@@ -1918,7 +2443,35 @@
   {
     "id": 117,
     "name": "minecraft:brewing_stand",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "has_bottle_0",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "has_bottle_1",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "has_bottle_2",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 118,
@@ -1946,6 +2499,15 @@
     "id": 120,
     "name": "minecraft:end_portal_frame",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "eye",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "facing",
@@ -2118,6 +2680,15 @@
     "name": "minecraft:tripwire_hook",
     "properties": [
       {
+        "type": "boolean",
+        "name": "attached",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "facing",
         "value": "north",
@@ -2127,13 +2698,104 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "suspended",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
   {
     "id": 132,
     "name": "minecraft:tripwire",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "attached",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "disarmed",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "suspended",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 133,
@@ -2257,7 +2919,17 @@
   {
     "id": 137,
     "name": "minecraft:command_block",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "triggered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 138,
@@ -2269,12 +2941,57 @@
     "name": "minecraft:cobblestone_wall",
     "properties": [
       {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "up",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "variant",
         "value": "cobblestone",
         "possible_values": [
           "cobblestone",
           "mossy_cobblestone"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -2395,6 +3112,15 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -2413,6 +3139,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "nodrop",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -2542,6 +3277,15 @@
           "compare",
           "subtract"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -2567,6 +3311,15 @@
         "possible_values": [
           "compare",
           "subtract"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -2614,6 +3367,15 @@
     "id": 154,
     "name": "minecraft:hopper",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "enabled",
+        "value": true,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "facing",
@@ -2689,6 +3451,15 @@
     "name": "minecraft:activator_rail",
     "properties": [
       {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "shape",
         "value": "north_south",
@@ -2718,6 +3489,15 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "triggered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -2777,6 +3557,42 @@
           "red",
           "black"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -2784,6 +3600,24 @@
     "id": 161,
     "name": "minecraft:leaves2",
     "properties": [
+      {
+        "type": "boolean",
+        "name": "check_decay",
+        "value": true,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "decayable",
+        "value": true,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
       {
         "type": "enum",
         "name": "variant",
@@ -2929,6 +3763,15 @@
         "possible_values": [
           "top",
           "bottom"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -3176,6 +4019,15 @@
     "name": "minecraft:double_stone_slab2",
     "properties": [
       {
+        "type": "boolean",
+        "name": "seamless",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
         "type": "enum",
         "name": "variant",
         "value": "red_sandstone",
@@ -3222,6 +4074,33 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -3238,6 +4117,33 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -3256,6 +4162,33 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -3272,6 +4205,33 @@
           "south",
           "west",
           "east"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -3290,33 +4250,245 @@
           "west",
           "east"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "in_wall",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
   {
     "id": 188,
     "name": "minecraft:spruce_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 189,
     "name": "minecraft:birch_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 190,
     "name": "minecraft:jungle_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 191,
     "name": "minecraft:dark_oak_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 192,
     "name": "minecraft:acacia_fence",
-    "properties": []
+    "properties": [
+      {
+        "type": "boolean",
+        "name": "east",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "north",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "south",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "west",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      }
+    ]
   },
   {
     "id": 193,
@@ -3349,6 +4521,24 @@
         "possible_values": [
           "left",
           "right"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -3385,6 +4575,24 @@
           "left",
           "right"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -3419,6 +4627,24 @@
         "possible_values": [
           "left",
           "right"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]
@@ -3455,6 +4681,24 @@
           "left",
           "right"
         ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
       }
     ]
   },
@@ -3489,6 +4733,24 @@
         "possible_values": [
           "left",
           "right"
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "open",
+        "value": false,
+        "possible_values": [
+          true,
+          false
+        ]
+      },
+      {
+        "type": "boolean",
+        "name": "powered",
+        "value": false,
+        "possible_values": [
+          true,
+          false
         ]
       }
     ]

@@ -147,7 +147,14 @@ class Minecraft:
     # but you can still use k=v if you want. it all reduces to a dict.
     def setBlockV2(self,x,y,z,type_name,*args,**kwargs):
         """Set block (x,y,z,type_name,property_value...)"""
-        property_str = dict_to_api_string(kwargs)
+        property_str = None
+        if len(kwargs) > 0:
+            property_str = dict_to_api_string(kwargs)
+        else:
+            d = {}
+            for arg in args:
+                arg.add_to_dict(d)
+            property_str = dict_to_api_string(d)
         self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
 
     def setBlocksV2(self,x0,y0,z0,x1,y1,z1,type_name,*args,**kwargs):

@@ -19,12 +19,24 @@ class IntegerPropertyWithValue():
     self.block_property = block_property
     self.value = value
 
+  def add_to_dict(self, d):
+    d[self.block_property.property_name] = str(self.value)
+
 class BooleanPropertyWithValue():
   def __init__(self, block_property, value):
     self.block_property = block_property
     self.value = value
 
+  def add_to_dict(self, d):
+    if self.value == True:
+      d[self.block_property.property_name] = "true"
+    else:
+      d[self.block_property.property_name] = "false"
+
 class EnumPropertyWithValue():
   def __init__(self, block_property, value):
     self.block_property = block_property
     self.value = value
+
+  def add_to_dict(self, d):
+    d[self.block_property.property_name] = self.value

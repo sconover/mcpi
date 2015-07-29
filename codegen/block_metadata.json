@@ -1,0 +1,3495 @@
+[{
+    "id": 0,
+    "name": "minecraft:air",
+    "properties": []
+  },
+  {
+    "id": 1,
+    "name": "minecraft:stone",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "stone",
+        "possible_values": [
+          "stone",
+          "granite",
+          "smooth_granite",
+          "diorite",
+          "smooth_diorite",
+          "andesite",
+          "smooth_andesite"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "minecraft:grass",
+    "properties": []
+  },
+  {
+    "id": 3,
+    "name": "minecraft:dirt",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "dirt",
+        "possible_values": [
+          "dirt",
+          "coarse_dirt",
+          "podzol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "minecraft:cobblestone",
+    "properties": []
+  },
+  {
+    "id": 5,
+    "name": "minecraft:planks",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle",
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "minecraft:sapling",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "stage",
+        "value": 0,
+        "possible_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle",
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "minecraft:bedrock",
+    "properties": []
+  },
+  {
+    "id": 8,
+    "name": "minecraft:flowing_water",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "level",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "minecraft:water",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "level",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "minecraft:flowing_lava",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "level",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "minecraft:lava",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "level",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "minecraft:sand",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "sand",
+        "possible_values": [
+          "sand",
+          "red_sand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "minecraft:gravel",
+    "properties": []
+  },
+  {
+    "id": 14,
+    "name": "minecraft:gold_ore",
+    "properties": []
+  },
+  {
+    "id": 15,
+    "name": "minecraft:iron_ore",
+    "properties": []
+  },
+  {
+    "id": 16,
+    "name": "minecraft:coal_ore",
+    "properties": []
+  },
+  {
+    "id": 17,
+    "name": "minecraft:log",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "axis",
+        "value": "y",
+        "possible_values": [
+          "x",
+          "y",
+          "z",
+          "none"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "minecraft:leaves",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "minecraft:sponge",
+    "properties": []
+  },
+  {
+    "id": 20,
+    "name": "minecraft:glass",
+    "properties": []
+  },
+  {
+    "id": 21,
+    "name": "minecraft:lapis_ore",
+    "properties": []
+  },
+  {
+    "id": 22,
+    "name": "minecraft:lapis_block",
+    "properties": []
+  },
+  {
+    "id": 23,
+    "name": "minecraft:dispenser",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "minecraft:sandstone",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "sandstone",
+        "possible_values": [
+          "sandstone",
+          "chiseled_sandstone",
+          "smooth_sandstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "minecraft:noteblock",
+    "properties": []
+  },
+  {
+    "id": 26,
+    "name": "minecraft:bed",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "part",
+        "value": "foot",
+        "possible_values": [
+          "head",
+          "foot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "minecraft:golden_rail",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "north_south",
+        "possible_values": [
+          "north_south",
+          "east_west",
+          "ascending_east",
+          "ascending_west",
+          "ascending_north",
+          "ascending_south"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "minecraft:detector_rail",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "north_south",
+        "possible_values": [
+          "north_south",
+          "east_west",
+          "ascending_east",
+          "ascending_west",
+          "ascending_north",
+          "ascending_south"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "minecraft:sticky_piston",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "minecraft:web",
+    "properties": []
+  },
+  {
+    "id": 31,
+    "name": "minecraft:tallgrass",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "dead_bush",
+        "possible_values": [
+          "dead_bush",
+          "tall_grass",
+          "fern"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "minecraft:deadbush",
+    "properties": []
+  },
+  {
+    "id": 33,
+    "name": "minecraft:piston",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "minecraft:piston_head",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "normal",
+        "possible_values": [
+          "normal",
+          "sticky"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "minecraft:wool",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "color",
+        "value": "white",
+        "possible_values": [
+          "white",
+          "orange",
+          "magenta",
+          "light_blue",
+          "yellow",
+          "lime",
+          "pink",
+          "gray",
+          "silver",
+          "cyan",
+          "purple",
+          "blue",
+          "brown",
+          "green",
+          "red",
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "minecraft:piston_extension",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "normal",
+        "possible_values": [
+          "normal",
+          "sticky"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "minecraft:yellow_flower",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "dandelion",
+        "possible_values": [
+          "dandelion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "minecraft:red_flower",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "poppy",
+        "possible_values": [
+          "poppy",
+          "blue_orchid",
+          "allium",
+          "houstonia",
+          "red_tulip",
+          "orange_tulip",
+          "white_tulip",
+          "pink_tulip",
+          "oxeye_daisy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "minecraft:brown_mushroom",
+    "properties": []
+  },
+  {
+    "id": 40,
+    "name": "minecraft:red_mushroom",
+    "properties": []
+  },
+  {
+    "id": 41,
+    "name": "minecraft:gold_block",
+    "properties": []
+  },
+  {
+    "id": 42,
+    "name": "minecraft:iron_block",
+    "properties": []
+  },
+  {
+    "id": 43,
+    "name": "minecraft:double_stone_slab",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "stone",
+        "possible_values": [
+          "stone",
+          "sandstone",
+          "wood_old",
+          "cobblestone",
+          "brick",
+          "stone_brick",
+          "nether_brick",
+          "quartz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "minecraft:stone_slab",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "stone",
+        "possible_values": [
+          "stone",
+          "sandstone",
+          "wood_old",
+          "cobblestone",
+          "brick",
+          "stone_brick",
+          "nether_brick",
+          "quartz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "minecraft:brick_block",
+    "properties": []
+  },
+  {
+    "id": 46,
+    "name": "minecraft:tnt",
+    "properties": []
+  },
+  {
+    "id": 47,
+    "name": "minecraft:bookshelf",
+    "properties": []
+  },
+  {
+    "id": 48,
+    "name": "minecraft:mossy_cobblestone",
+    "properties": []
+  },
+  {
+    "id": 49,
+    "name": "minecraft:obsidian",
+    "properties": []
+  },
+  {
+    "id": 50,
+    "name": "minecraft:torch",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "up",
+        "possible_values": [
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "minecraft:fire",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "type": "integer",
+        "name": "upper",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "minecraft:mob_spawner",
+    "properties": []
+  },
+  {
+    "id": 53,
+    "name": "minecraft:oak_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "minecraft:chest",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "minecraft:redstone_wire",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "east",
+        "value": "none",
+        "possible_values": [
+          "up",
+          "side",
+          "none"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "north",
+        "value": "none",
+        "possible_values": [
+          "up",
+          "side",
+          "none"
+        ]
+      },
+      {
+        "type": "integer",
+        "name": "power",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "south",
+        "value": "none",
+        "possible_values": [
+          "up",
+          "side",
+          "none"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "west",
+        "value": "none",
+        "possible_values": [
+          "up",
+          "side",
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "minecraft:diamond_ore",
+    "properties": []
+  },
+  {
+    "id": 57,
+    "name": "minecraft:diamond_block",
+    "properties": []
+  },
+  {
+    "id": 58,
+    "name": "minecraft:crafting_table",
+    "properties": []
+  },
+  {
+    "id": 59,
+    "name": "minecraft:wheat",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "minecraft:farmland",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "moisture",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "minecraft:furnace",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "minecraft:lit_furnace",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "minecraft:standing_sign",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "rotation",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "minecraft:wooden_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "minecraft:ladder",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "minecraft:rail",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "north_south",
+        "possible_values": [
+          "north_south",
+          "east_west",
+          "ascending_east",
+          "ascending_west",
+          "ascending_north",
+          "ascending_south",
+          "south_east",
+          "south_west",
+          "north_west",
+          "north_east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "minecraft:stone_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "minecraft:wall_sign",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "minecraft:lever",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down_x",
+          "east",
+          "west",
+          "south",
+          "north",
+          "up_z",
+          "up_x",
+          "down_z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "minecraft:stone_pressure_plate",
+    "properties": []
+  },
+  {
+    "id": 71,
+    "name": "minecraft:iron_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "minecraft:wooden_pressure_plate",
+    "properties": []
+  },
+  {
+    "id": 73,
+    "name": "minecraft:redstone_ore",
+    "properties": []
+  },
+  {
+    "id": 74,
+    "name": "minecraft:lit_redstone_ore",
+    "properties": []
+  },
+  {
+    "id": 75,
+    "name": "minecraft:unlit_redstone_torch",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "up",
+        "possible_values": [
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "minecraft:redstone_torch",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "up",
+        "possible_values": [
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "minecraft:stone_button",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "minecraft:snow_layer",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "layers",
+        "value": 1,
+        "possible_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "minecraft:ice",
+    "properties": []
+  },
+  {
+    "id": 80,
+    "name": "minecraft:snow",
+    "properties": []
+  },
+  {
+    "id": 81,
+    "name": "minecraft:cactus",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "minecraft:clay",
+    "properties": []
+  },
+  {
+    "id": 83,
+    "name": "minecraft:reeds",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "minecraft:jukebox",
+    "properties": []
+  },
+  {
+    "id": 85,
+    "name": "minecraft:fence",
+    "properties": []
+  },
+  {
+    "id": 86,
+    "name": "minecraft:pumpkin",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "minecraft:netherrack",
+    "properties": []
+  },
+  {
+    "id": 88,
+    "name": "minecraft:soul_sand",
+    "properties": []
+  },
+  {
+    "id": 89,
+    "name": "minecraft:glowstone",
+    "properties": []
+  },
+  {
+    "id": 90,
+    "name": "minecraft:portal",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "axis",
+        "value": "x",
+        "possible_values": [
+          "x",
+          "z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "minecraft:lit_pumpkin",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "minecraft:cake",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "bites",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "minecraft:unpowered_repeater",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "delay",
+        "value": 1,
+        "possible_values": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "minecraft:powered_repeater",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "delay",
+        "value": 1,
+        "possible_values": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "minecraft:stained_glass",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "color",
+        "value": "white",
+        "possible_values": [
+          "white",
+          "orange",
+          "magenta",
+          "light_blue",
+          "yellow",
+          "lime",
+          "pink",
+          "gray",
+          "silver",
+          "cyan",
+          "purple",
+          "blue",
+          "brown",
+          "green",
+          "red",
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "minecraft:trapdoor",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "minecraft:monster_egg",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "stone",
+        "possible_values": [
+          "stone",
+          "cobblestone",
+          "stone_brick",
+          "mossy_brick",
+          "cracked_brick",
+          "chiseled_brick"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "minecraft:stonebrick",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "stonebrick",
+        "possible_values": [
+          "stonebrick",
+          "mossy_stonebrick",
+          "cracked_stonebrick",
+          "chiseled_stonebrick"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "minecraft:brown_mushroom_block",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "all_outside",
+        "possible_values": [
+          "north_west",
+          "north",
+          "north_east",
+          "west",
+          "center",
+          "east",
+          "south_west",
+          "south",
+          "south_east",
+          "stem",
+          "all_inside",
+          "all_outside",
+          "all_stem"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "minecraft:red_mushroom_block",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "all_outside",
+        "possible_values": [
+          "north_west",
+          "north",
+          "north_east",
+          "west",
+          "center",
+          "east",
+          "south_west",
+          "south",
+          "south_east",
+          "stem",
+          "all_inside",
+          "all_outside",
+          "all_stem"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "minecraft:iron_bars",
+    "properties": []
+  },
+  {
+    "id": 102,
+    "name": "minecraft:glass_pane",
+    "properties": []
+  },
+  {
+    "id": 103,
+    "name": "minecraft:melon_block",
+    "properties": []
+  },
+  {
+    "id": 104,
+    "name": "minecraft:pumpkin_stem",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "up",
+        "possible_values": [
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "minecraft:melon_stem",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "up",
+        "possible_values": [
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "minecraft:vine",
+    "properties": []
+  },
+  {
+    "id": 107,
+    "name": "minecraft:fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "minecraft:brick_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "minecraft:stone_brick_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "minecraft:mycelium",
+    "properties": []
+  },
+  {
+    "id": 111,
+    "name": "minecraft:waterlily",
+    "properties": []
+  },
+  {
+    "id": 112,
+    "name": "minecraft:nether_brick",
+    "properties": []
+  },
+  {
+    "id": 113,
+    "name": "minecraft:nether_brick_fence",
+    "properties": []
+  },
+  {
+    "id": 114,
+    "name": "minecraft:nether_brick_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "minecraft:nether_wart",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "minecraft:enchanting_table",
+    "properties": []
+  },
+  {
+    "id": 117,
+    "name": "minecraft:brewing_stand",
+    "properties": []
+  },
+  {
+    "id": 118,
+    "name": "minecraft:cauldron",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "level",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "minecraft:end_portal",
+    "properties": []
+  },
+  {
+    "id": 120,
+    "name": "minecraft:end_portal_frame",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "minecraft:end_stone",
+    "properties": []
+  },
+  {
+    "id": 122,
+    "name": "minecraft:dragon_egg",
+    "properties": []
+  },
+  {
+    "id": 123,
+    "name": "minecraft:redstone_lamp",
+    "properties": []
+  },
+  {
+    "id": 124,
+    "name": "minecraft:lit_redstone_lamp",
+    "properties": []
+  },
+  {
+    "id": 125,
+    "name": "minecraft:double_wooden_slab",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle",
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "minecraft:wooden_slab",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "oak",
+        "possible_values": [
+          "oak",
+          "spruce",
+          "birch",
+          "jungle",
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "minecraft:cocoa",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "minecraft:sandstone_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "minecraft:emerald_ore",
+    "properties": []
+  },
+  {
+    "id": 130,
+    "name": "minecraft:ender_chest",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "minecraft:tripwire_hook",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "minecraft:tripwire",
+    "properties": []
+  },
+  {
+    "id": 133,
+    "name": "minecraft:emerald_block",
+    "properties": []
+  },
+  {
+    "id": 134,
+    "name": "minecraft:spruce_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "minecraft:birch_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "minecraft:jungle_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "minecraft:command_block",
+    "properties": []
+  },
+  {
+    "id": 138,
+    "name": "minecraft:beacon",
+    "properties": []
+  },
+  {
+    "id": 139,
+    "name": "minecraft:cobblestone_wall",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "cobblestone",
+        "possible_values": [
+          "cobblestone",
+          "mossy_cobblestone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "minecraft:flower_pot",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "contents",
+        "value": "empty",
+        "possible_values": [
+          "empty",
+          "rose",
+          "blue_orchid",
+          "allium",
+          "houstonia",
+          "red_tulip",
+          "orange_tulip",
+          "white_tulip",
+          "pink_tulip",
+          "oxeye_daisy",
+          "dandelion",
+          "oak_sapling",
+          "spruce_sapling",
+          "birch_sapling",
+          "jungle_sapling",
+          "acacia_sapling",
+          "dark_oak_sapling",
+          "mushroom_red",
+          "mushroom_brown",
+          "dead_bush",
+          "fern",
+          "cactus"
+        ]
+      },
+      {
+        "type": "integer",
+        "name": "legacy_data",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "minecraft:carrots",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "minecraft:potatoes",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "age",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "name": "minecraft:wooden_button",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "name": "minecraft:skull",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "name": "minecraft:anvil",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "damage",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "minecraft:trapped_chest",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "minecraft:light_weighted_pressure_plate",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "power",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "minecraft:heavy_weighted_pressure_plate",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "power",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "name": "minecraft:unpowered_comparator",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "mode",
+        "value": "compare",
+        "possible_values": [
+          "compare",
+          "subtract"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "name": "minecraft:powered_comparator",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "mode",
+        "value": "compare",
+        "possible_values": [
+          "compare",
+          "subtract"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "name": "minecraft:daylight_detector",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "power",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "name": "minecraft:redstone_block",
+    "properties": []
+  },
+  {
+    "id": 153,
+    "name": "minecraft:quartz_ore",
+    "properties": []
+  },
+  {
+    "id": 154,
+    "name": "minecraft:hopper",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "down",
+        "possible_values": [
+          "down",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "minecraft:quartz_block",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "default",
+        "possible_values": [
+          "default",
+          "chiseled",
+          "lines_y",
+          "lines_x",
+          "lines_z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "minecraft:quartz_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "name": "minecraft:activator_rail",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "north_south",
+        "possible_values": [
+          "north_south",
+          "east_west",
+          "ascending_east",
+          "ascending_west",
+          "ascending_north",
+          "ascending_south"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "minecraft:dropper",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "name": "minecraft:stained_hardened_clay",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "color",
+        "value": "white",
+        "possible_values": [
+          "white",
+          "orange",
+          "magenta",
+          "light_blue",
+          "yellow",
+          "lime",
+          "pink",
+          "gray",
+          "silver",
+          "cyan",
+          "purple",
+          "blue",
+          "brown",
+          "green",
+          "red",
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "name": "minecraft:stained_glass_pane",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "color",
+        "value": "white",
+        "possible_values": [
+          "white",
+          "orange",
+          "magenta",
+          "light_blue",
+          "yellow",
+          "lime",
+          "pink",
+          "gray",
+          "silver",
+          "cyan",
+          "purple",
+          "blue",
+          "brown",
+          "green",
+          "red",
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "name": "minecraft:leaves2",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "acacia",
+        "possible_values": [
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "name": "minecraft:log2",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "axis",
+        "value": "y",
+        "possible_values": [
+          "x",
+          "y",
+          "z",
+          "none"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "acacia",
+        "possible_values": [
+          "acacia",
+          "dark_oak"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "name": "minecraft:acacia_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "name": "minecraft:dark_oak_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "name": "minecraft:slime",
+    "properties": []
+  },
+  {
+    "id": 166,
+    "name": "minecraft:barrier",
+    "properties": []
+  },
+  {
+    "id": 167,
+    "name": "minecraft:iron_trapdoor",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "name": "minecraft:prismarine",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "prismarine",
+        "possible_values": [
+          "prismarine",
+          "prismarine_bricks",
+          "dark_prismarine"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "name": "minecraft:sea_lantern",
+    "properties": []
+  },
+  {
+    "id": 170,
+    "name": "minecraft:hay_block",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "axis",
+        "value": "y",
+        "possible_values": [
+          "x",
+          "y",
+          "z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "name": "minecraft:carpet",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "color",
+        "value": "white",
+        "possible_values": [
+          "white",
+          "orange",
+          "magenta",
+          "light_blue",
+          "yellow",
+          "lime",
+          "pink",
+          "gray",
+          "silver",
+          "cyan",
+          "purple",
+          "blue",
+          "brown",
+          "green",
+          "red",
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "name": "minecraft:hardened_clay",
+    "properties": []
+  },
+  {
+    "id": 173,
+    "name": "minecraft:coal_block",
+    "properties": []
+  },
+  {
+    "id": 174,
+    "name": "minecraft:packed_ice",
+    "properties": []
+  },
+  {
+    "id": 175,
+    "name": "minecraft:double_plant",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "sunflower",
+        "possible_values": [
+          "sunflower",
+          "syringa",
+          "double_grass",
+          "double_fern",
+          "double_rose",
+          "paeonia"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "name": "minecraft:standing_banner",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "rotation",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "name": "minecraft:wall_banner",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "name": "minecraft:daylight_detector_inverted",
+    "properties": [
+      {
+        "type": "integer",
+        "name": "power",
+        "value": 0,
+        "possible_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "name": "minecraft:red_sandstone",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "type",
+        "value": "red_sandstone",
+        "possible_values": [
+          "red_sandstone",
+          "chiseled_red_sandstone",
+          "smooth_red_sandstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "name": "minecraft:red_sandstone_stairs",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "shape",
+        "value": "straight",
+        "possible_values": [
+          "straight",
+          "inner_left",
+          "inner_right",
+          "outer_left",
+          "outer_right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "name": "minecraft:double_stone_slab2",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "red_sandstone",
+        "possible_values": [
+          "red_sandstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "name": "minecraft:stone_slab2",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "bottom",
+        "possible_values": [
+          "top",
+          "bottom"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "variant",
+        "value": "red_sandstone",
+        "possible_values": [
+          "red_sandstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "name": "minecraft:spruce_fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "name": "minecraft:birch_fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "name": "minecraft:jungle_fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "name": "minecraft:dark_oak_fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "name": "minecraft:acacia_fence_gate",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "name": "minecraft:spruce_fence",
+    "properties": []
+  },
+  {
+    "id": 189,
+    "name": "minecraft:birch_fence",
+    "properties": []
+  },
+  {
+    "id": 190,
+    "name": "minecraft:jungle_fence",
+    "properties": []
+  },
+  {
+    "id": 191,
+    "name": "minecraft:dark_oak_fence",
+    "properties": []
+  },
+  {
+    "id": 192,
+    "name": "minecraft:acacia_fence",
+    "properties": []
+  },
+  {
+    "id": 193,
+    "name": "minecraft:spruce_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "name": "minecraft:birch_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "name": "minecraft:jungle_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "name": "minecraft:acacia_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "name": "minecraft:dark_oak_door",
+    "properties": [
+      {
+        "type": "enum",
+        "name": "facing",
+        "value": "north",
+        "possible_values": [
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "half",
+        "value": "lower",
+        "possible_values": [
+          "upper",
+          "lower"
+        ]
+      },
+      {
+        "type": "enum",
+        "name": "hinge",
+        "value": "left",
+        "possible_values": [
+          "left",
+          "right"
+        ]
+      }
+    ]
+  }]

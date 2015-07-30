@@ -178,7 +178,10 @@ class Minecraft:
         property_str = None
         if len(kwargs) > 0:
             property_str = dict_to_api_string(kwargs)
-        self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
+        if property_str == None:
+            self.conn.send("v2.world.setBlock", x, y, z, type_name)
+        else:
+            self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
 
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""

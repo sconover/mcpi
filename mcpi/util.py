@@ -8,9 +8,3 @@ def flatten(l):
 
 def flatten_parameters_to_string(l):
     return ",".join(map(str, flatten(l)))
-
-def dict_to_api_string(d):
-  entries = []
-  for key in d:
-    entries.append(key + "=" + d[key])
-  return ";".join(entries)

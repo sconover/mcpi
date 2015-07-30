@@ -2,9 +2,8 @@ from connection import Connection
 from vec3 import Vec3
 from event import BlockEvent
 from block import Block
-from facing import Facing
 import math
-from util import flatten, dict_to_api_string
+from util import flatten
 
 """ Minecraft PI low level api v0.1_1
 
@@ -141,25 +140,6 @@ class Minecraft:
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""
         self.conn.send("world.setBlocks", intFloor(args))
-
-    # TODO: should there be a deeper split in the api?
-    # args - property value objects...(better safety, ***discoverability***)
-    # but you can still use k=v if you want. it all reduces to a dict.
-    def setBlockV2(self,x,y,z,type_name,*args,**kwargs):
-        """Set block (x,y,z,type_name,property_value...)"""
-        property_str = None
-        if len(kwargs) > 0:
-            property_str = dict_to_api_string(kwargs)
-        else:
-            d = {}
-            for arg in args:
-                arg.add_to_dict(d)
-            property_str = dict_to_api_string(d)
-        self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
-
-    def setBlocksV2(self,x0,y0,z0,x1,y1,z1,type_name,*args,**kwargs):
-        """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,type_name,property_value...)"""
-        self.conn.send("v2.world.setBlocks", intFloor(args))
 
     def getHeight(self, *args):
         """Get the height of the world (x,z) => int"""

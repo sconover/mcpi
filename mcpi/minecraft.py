@@ -3,7 +3,7 @@ from vec3 import Vec3
 from event import BlockEvent, ChatEvent
 from block import Block
 import math
-from util import flatten
+from util import flatten, dict_to_api_string
 
 """ Minecraft PI low level api v0.1_1
 
@@ -16,7 +16,7 @@ from util import flatten
      entityId, by injecting [] that flattens to nothing)
 
     @author: Aron Nieminen, Mojang AB
-    
+
     Updated to included additional functionality provided by RaspberryJuice:
     - getBlocks() : implemented
     - .create() : can now accept "name" (player name) for use in multiplayer
@@ -172,6 +172,13 @@ class Minecraft:
     def setBlock(self, *args):
         """Set block (x,y,z,id,[data])"""
         self.conn.send("world.setBlock", intFloor(args))
+
+    def setBlockV2(self,x,y,z,type_name,**kwargs):
+        """Set block (x,y,z,type_name,property_value...)"""
+        property_str = None
+        if len(kwargs) > 0:
+            property_str = dict_to_api_string(kwargs)
+        self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
 
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""

@@ -37,7 +37,7 @@ class Connection:
     def endBatch(self):
         self.batch = False
         if len(self.batchCommands)>0:
-            self._doSend("\n".join(self.batchCommands))
+            self._doSend("".join(self.batchCommands))
 
     def send(self, f, *data):
         """Sends data. Note that a trailing newline '\n' is added here"""

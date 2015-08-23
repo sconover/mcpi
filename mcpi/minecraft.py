@@ -89,7 +89,7 @@ class CmdEntity(CmdPositioner):
             result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name)
         else:
             result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name, property_str)
-        parts = result.split(",")
+        parts = result.split(":")
         return Entity(parts[0], parts[1])
 
     def startTaskV2(self,entity_uuid,task_name):
@@ -99,6 +99,16 @@ class CmdEntity(CmdPositioner):
     def resetTaskV2(self,entity_uuid,task_name):
         """Reset ('un-start') a task for a living entity (such as 'sit') (entity_uuid, task_name)"""
         self.conn.send("v2.entity.living.resetTask", entity_uuid, task_name)
+
+    def getAllInBoundingCube(self,
+        x1, y1, z1,
+        x2, y2, z2):
+        """Fetch all entities that are within the bounding cube (entity_uuid, task_name)..."""
+        result = self.conn.sendReceive("v2.entity.getAllInBoundingCube",
+            x1, y1, z1,
+            x2, y2, z2)
+        entities_parsed = map(lambda str: str.split(":"), result.split(","))
+        return map(lambda parsed: Entity(parsed[0], parsed[1]), entities_parsed)
 
 class CmdPlayer(CmdPositioner):
     """Methods for the host (Raspberry Pi) player"""

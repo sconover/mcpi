@@ -2,6 +2,7 @@ from connection import Connection
 from vec3 import Vec3
 from event import BlockEvent, ChatEvent
 from block import Block
+from entity import Entity
 import math
 from util import flatten, dict_to_api_string
 
@@ -77,6 +78,12 @@ class CmdEntity(CmdPositioner):
     """Methods for entities"""
     def __init__(self, connection):
         CmdPositioner.__init__(self, connection, "entity")
+
+    def spawnV2(self,x,y,z,entity_type_name):
+        """Spawn entity (x,y,z,entity_type_name)"""
+        result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name)
+        parts = result.split(",")
+        return Entity(parts[0], parts[1])
 
 
 class CmdPlayer(CmdPositioner):

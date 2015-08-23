@@ -16,6 +16,8 @@ class Connection:
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.connect((address, port))
         self.lastSent = ""
+        self.batch = False
+        self.batchCommands = None
 
     def drain(self):
         """Drains the socket of incoming data"""
@@ -28,11 +30,24 @@ class Connection:
             e += "Last Message: <%s>\n"%self.lastSent.strip()
             sys.stderr.write(e)
 
+    def startBatch(self):
+        self.batch = True
+        self.batchCommands = []
+
+    def endBatch(self):
+        self.batch = False
+        if len(self.batchCommands)>0:
+            self._doSend("\n".join(self.batchCommands))
+
     def send(self, f, *data):
         """Sends data. Note that a trailing newline '\n' is added here"""
         s = "%s(%s)\n"%(f, flatten_parameters_to_string(data))
-        #print "f,data:",f,data
-        #print "s",s
+        if self.batch == True:
+            self.batchCommands.append(s)
+        else:
+            self._doSend(s)
+
+    def _doSend(self, s):
         self.drain()
         self.lastSent = s
         self.socket.sendall(s)
@@ -46,5 +61,7 @@ class Connection:
 
     def sendReceive(self, *data):
         """Sends and receive data"""
+        if self.batch == True:
+            raise Exception("batches of sendReceive not yet supported")
         self.send(*data)
         return self.receive()

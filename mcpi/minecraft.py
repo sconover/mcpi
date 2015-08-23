@@ -92,6 +92,14 @@ class CmdEntity(CmdPositioner):
         parts = result.split(",")
         return Entity(parts[0], parts[1])
 
+    def startTaskV2(self,entity_uuid,task_name):
+        """Start a task for a living entity (such as 'sit') (entity_uuid, task_name)"""
+        self.conn.send("v2.entity.living.startTask", entity_uuid, task_name)
+
+    def resetTaskV2(self,entity_uuid,task_name):
+        """Reset ('un-start') a task for a living entity (such as 'sit') (entity_uuid, task_name)"""
+        self.conn.send("v2.entity.living.resetTask", entity_uuid, task_name)
+
 class CmdPlayer(CmdPositioner):
     """Methods for the host (Raspberry Pi) player"""
     def __init__(self, connection, name=None):
@@ -228,6 +236,12 @@ class Minecraft:
     def setting(self, setting, status):
         """Set a world setting (setting, status). keys: world_immutable, nametags_visible"""
         self.conn.send("world.setting", setting, 1 if bool(status) else 0)
+
+    def startBatch(self):
+        self.conn.startBatch()
+
+    def endBatch(self):
+        self.conn.endBatch()
 
     @staticmethod
     def create(address = "localhost", port = 4711, name = None):

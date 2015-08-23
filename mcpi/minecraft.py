@@ -79,12 +79,18 @@ class CmdEntity(CmdPositioner):
     def __init__(self, connection):
         CmdPositioner.__init__(self, connection, "entity")
 
-    def spawnV2(self,x,y,z,entity_type_name):
+    def spawnV2(self,x,y,z,entity_type_name,**kwargs):
         """Spawn entity (x,y,z,entity_type_name)"""
-        result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name)
+        property_str = None
+        if len(kwargs) > 0:
+            property_str = dict_to_api_string(kwargs)
+        result = None
+        if property_str == None:
+            result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name)
+        else:
+            result = self.conn.sendReceive("v2.entity.spawn", x, y, z, entity_type_name, property_str)
         parts = result.split(",")
         return Entity(parts[0], parts[1])
-
 
 class CmdPlayer(CmdPositioner):
     """Methods for the host (Raspberry Pi) player"""

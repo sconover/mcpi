@@ -52,6 +52,11 @@ class CmdPositioner:
         s = self.conn.sendReceive(self.pkg + ".getTile", id)
         return Vec3(*map(int, s.split(",")))
 
+    def getTilePosV2(self, id):
+        """Get entity tile position (entityId:int) => Vec3"""
+        s = self.conn.sendReceive("v2." + self.pkg + ".getTile", id)
+        return Vec3(*map(int, s.split(",")))
+
     def setTilePos(self, id, *args):
         """Set entity tile position (entityId:int) => Vec3"""
         self.conn.send(self.pkg + ".setTile", id, intFloor(*args))
@@ -123,6 +128,8 @@ class CmdPlayer(CmdPositioner):
         return CmdPositioner.setPos(self, self.name, args)
     def getTilePos(self):
         return CmdPositioner.getTilePos(self, self.name)
+    def getTilePos(self):
+        return CmdPositioner.getTilePosV2(self, self.name)
     def setTilePos(self, *args):
         return CmdPositioner.setTilePos(self, self.name, args)
     def getDirection(self):

@@ -126,8 +126,8 @@ class CmdPlayer(CmdPositioner):
         return CmdPositioner.getPos(self, self.name)
     def setPos(self, *args):
         return CmdPositioner.setPos(self, self.name, args)
-    def getTilePos(self):
-        return CmdPositioner.getTilePos(self, self.name)
+    # def getTilePos(self):
+    #     return CmdPositioner.getTilePos(self, self.name)
     def getTilePos(self):
         return CmdPositioner.getTilePosV2(self, self.name)
     def setTilePos(self, *args):
@@ -211,8 +211,19 @@ class Minecraft:
         """Set block (x,y,z,id,[data])"""
         self.conn.send("world.setBlock", intFloor(args))
 
+    def getBlockV2(self,x,y,z):
+        """Get block (x,y,z) => x,y,z,type_name,property=value..."""
+
+        # ex: "10,10,10,piston,extended=false;facing=west"
+
+        parts = self.conn.sendReceive("v2.world.getBlock", x, y, z).split(",")
+        result = {"x": parts[0], "y": parts[1], "z": parts[2], "type": parts[3]}
+        if len(parts)==5:
+            result["properties"] = dict(map(lambda line: line.split("="), parts[4].split(";")))
+        return result
+
     def setBlockV2(self,x,y,z,type_name,**kwargs):
-        """Set block (x,y,z,type_name,property_value...)"""
+        """Set block (x,y,z,type_name,property=value...)"""
         property_str = None
         if len(kwargs) > 0:
             property_str = dict_to_api_string(kwargs)
@@ -220,6 +231,25 @@ class Minecraft:
             self.conn.send("v2.world.setBlock", x, y, z, type_name)
         else:
             self.conn.send("v2.world.setBlock", x, y, z, type_name, property_str)
+
+    def getThenSetBlockV2(self,x,y,z,type_name,**kwargs):
+        """Get block (x,y,z), then Set block (x,y,z,type_name,property=value...), and return the original block."""
+
+        property_str = None
+        if len(kwargs) > 0:
+            property_str = dict_to_api_string(kwargs)
+
+        raw_result = None
+        if property_str == None:
+            raw_result = self.conn.sendReceive("v2.world.getThenSetBlock", x, y, z, type_name)
+        else:
+            raw_result = self.conn.sendReceive("v2.world.getThenSetBlock", x, y, z, type_name, property_str)
+
+        parts = raw_result.split(",")
+        result = {"x": parts[0], "y": parts[1], "z": parts[2], "type": parts[3]}
+        if len(parts)==5:
+            result["properties"] = dict(map(lambda line: line.split("="), parts[4].split(";")))
+        return result
 
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""
